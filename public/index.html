@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta content="description" name="description">
+    <meta name="google" content="notranslate" />
+    <meta content="Natnael Girma" name="author">
+  
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
+    <link href="./assets/favicon.ico" rel="icon">
+  
+    <title>Title page</title>  
+  
+  <link href="./main.3f6952e4.css" type="text/css" rel="stylesheet">
+
+  <script type="text/javascript" src="./main.70a66962.js"></script>
+  <!-- <script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar1").style.top = "0";
+      } else {
+        document.getElementById("navbar1").style.top = "-80px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+    </script> -->
+    <script>
+      // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        
+        if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+          document.getElementById("navbar2").style.padding = "0px 0px";
+        } else {
+          document.getElementById("navbar2").style.padding = "20px 0px";
+        }
+      }
+      </script>
+
+
+
+  </head>
+  <body class="">
+    <div id="root"></div>
+
+  </body>
+</html>
