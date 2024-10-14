@@ -9,7 +9,7 @@ import Skills from './components/Skills.js';
 import {
   Routes,
   Route,
-  HashRouter
+  // HashRouter
 } from "react-router-dom";
   
 function App() {

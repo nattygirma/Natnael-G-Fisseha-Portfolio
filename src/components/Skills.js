@@ -1,6 +1,6 @@
 import React from "react";
 // import { Heading } from "@chakra-ui/react";
-import { skills, Skill } from "./skills/config";
+import { skills } from "./skills/config";
 import { v4 as uuidv4 } from 'uuid';
 import "../components/skills/Skills.css";
 
@@ -20,9 +20,9 @@ class Skills extends React.Component {
       </div>
     <div className="bg-skills">
       <div className="skill-icons-gird">
-        {skills.map((skill: Skill) => {
+        {skills.map((skill) => {
           return(
-            <a key={uuidv4()} href={skill.url} target="_blank">
+            <a key={uuidv4()} href={skill.url} target="_blank noreferrer">
               <div className="skill">
                 <img src={skill.img} alt="Skill logo" />
               </div>

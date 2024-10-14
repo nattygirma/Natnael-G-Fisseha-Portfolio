@@ -19,25 +19,38 @@ import Next from "./images/nextjs-logo.png";
 import IPFS from "./images/ipfs-logo.png";
 import NodeJS from "./images/nodej-js.png";
 
-export type Skill = {
-  name: string;
-  img: any;
-  url: string;
-}
 
-export const getSkill = (names: string[]) => {
-  let toReturn: Skill[] = [];
-  names.map((name: string) => {
-    skills.map((skill: Skill) => {
-      if(skill.name.toLowerCase() === name.toLowerCase()) {
+export const getSkill = (names) => {
+  let toReturn = [];
+  names.forEach((name) => {
+    skills.forEach((skill) => {
+      if (skill.name.toLowerCase() === name.toLowerCase()) {
         toReturn.push(skill);
       }
     });
-  })
+  });
   return toReturn;
-}
+};
 
-export const skills: Skill[] = [
+// export type Skill = {
+//   name: string;
+//   img: any;
+//   url: string;
+// }
+
+// export const getSkill = (names: string[]) => {
+//   let toReturn: Skill[] = [];
+//   names.map((name: string) => {
+//     skills.map((skill: Skill) => {
+//       if(skill.name.toLowerCase() === name.toLowerCase()) {
+//         toReturn.push(skill);
+//       }
+//     });
+//   })
+//   return toReturn;
+// }
+
+export const skills= [
   {
     name: "Solidity",
     url: "https://soliditylang.org/",
